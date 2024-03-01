@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Challenge Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url(77430626.webp);
+            mask-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 109vh;
+  
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Challenge Generator</h1>
+        <p>Choose a category and click the button to get your next fitness challenge:</p>
+        <select id="category">
+            <option value="cardio">Cardio</option>
+            <option value="chest">Chest</option>
+            <option value="legs">Legs</option>
+            <option value="fullBody">Full Body</option>
+        </select>
+        <p id="challenge"></p>
+        <button onclick="generateChallenge()">Generate Challenge</button>
+    </div>
+
+    <script>
+        const challenges = {
+            cardio: ["Run 2 miles", "Jump rope for 10 minutes", "Take a 30-minute brisk walk", "Bike for 5 miles", "Swim 20 laps", "Do 100 jumping jacks"],
+            chest: ["Do 20 push-ups", "Do 15 chest dips", "Complete 3 sets of 10 bench presses", "Do 20 incline push-ups", "Do 10 clap push-ups"],
+            legs: ["Complete 50 squats", "Do 30 lunges on each leg", "Do 20 jump squats", "Do 15 Bulgarian split squats on each leg", "Hold a wall sit for 2 minutes"],
+            fullBody: ["Do 30 burpees", "Plank for 2 minutes", "Do 50 mountain climbers", "Complete 3 sets of 10 pull-ups", "Do 20 Russian twists with a medicine ball"]
+        };
+
+    </script>
+</body>
+</html>
